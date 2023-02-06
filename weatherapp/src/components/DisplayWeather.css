@@ -1,0 +1,91 @@
+.weather-info {
+  color: white;
+  display: block;
+  /* margin: auto; */
+  padding: auto;
+  margin-top: 50px;
+}
+
+.card {
+  text-align: center;
+  width: 290px;
+  height: 400px;
+  padding: 20px;
+  margin: 50px;
+  display: block;
+  margin: auto;
+  padding: auto;
+
+  border-radius: 20px;
+}
+.city-title {
+  color: white;
+  font-size: 18px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card-body p {
+  color: white;
+}
+.delete-icon {
+  width: 27px;
+  height: 35px;
+  color: white;
+}
+.delete-btn {
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+.desc {
+  float: right;
+  margin: 10px 0;
+}
+.sun-icon {
+  width: 107px;
+  height: 39px;
+  /* width: 40px;
+  height: 48px; */
+  color: orange;
+  /* background-color: white;
+  border-radius: 2px; */
+}
+.temp {
+  font-size: 64px;
+  color: white;
+  margin-top: 65px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.card-body p {
+  margin-bottom: 60px;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.rise-set {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rise-set p {
+  font-size: 12px;
+}
+.rise-set-img {
+  width: 50px;
+  height: 30px;
+  display: block;
+  padding: auto;
+  margin: auto;
+}
+/* .sunrise,
+.sunset {
+  display: block;
+  padding: auto;
+  margin: auto;
+} */
