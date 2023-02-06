@@ -3,15 +3,15 @@
   display: block;
   /* margin: auto; */
   padding: auto;
-  margin-top: 50px;
+  margin-top: 35px;
 }
 
 .card {
   text-align: center;
-  width: 290px;
-  height: 400px;
+  width: 330px;
+  height: 440px;
   padding: 20px;
-  margin: 50px;
+  margin: 35px;
   display: block;
   margin: auto;
   padding: auto;
@@ -28,9 +28,6 @@
   text-align: center;
 }
 
-.card-body p {
-  color: white;
-}
 .delete-icon {
   width: 27px;
   height: 35px;
@@ -55,7 +52,7 @@
   border-radius: 2px; */
 }
 .temp {
-  font-size: 64px;
+  font-size: 58px;
   color: white;
   margin-top: 65px;
   text-align: center;
@@ -63,7 +60,7 @@
 }
 
 .card-body p {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   padding: 5px;
   font-size: 18px;
   font-weight: 500;
@@ -74,7 +71,7 @@
 }
 
 .rise-set p {
-  font-size: 12px;
+  font-size: 13px;
 }
 .rise-set-img {
   width: 50px;

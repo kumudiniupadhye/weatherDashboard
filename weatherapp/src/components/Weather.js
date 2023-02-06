@@ -5,8 +5,7 @@ import "./Weather.css";
 function Weather() {
   const [form, setForm] = useState("");
   const [weather, setWeather] = useState({});
-  const [totalData, setTotalData] = useState([]);
-  const [inputText, setInputText] = useState("");
+  // const [totalData, settotalData] = useState({});
 
   async function getWeatherData(e) {
     e.preventDefault();
@@ -22,8 +21,6 @@ function Weather() {
       // console.log("resjson: ", resJson);
       // console.log("show array -> ", showArray);
 
-      //   console.log(resJson);
-      // console.log("response ->", resJson);
       if (resJson.message !== "city not found") {
         // console.log("form", form);
         setWeather({
@@ -45,8 +42,7 @@ function Weather() {
   const refreshPage = () => {
     window.location.reload();
   };
-  totalData.push(weather);
-
+  // totalData.push(weather);
   // console.log("lets see -> ", totalData);
 
   return (
@@ -62,18 +58,24 @@ function Weather() {
           autoFocus
         />
         &nbsp; &nbsp;
-        <button className="weather-btn" onClick={(e) => getWeatherData(e)}>
+        <button
+          className="weather-btn bg-gradient-to-r from-cyan-500 to-blue-500"
+          onClick={(e) => getWeatherData(e)}
+        >
           Add
         </button>
         &nbsp; &nbsp;
-        <button className="reload-btn" onClick={refreshPage}>
+        <button
+          className="reload-btn bg-gradient-to-r from-cyan-500 to-blue-500 "
+          onClick={refreshPage}
+        >
           Reload
         </button>
       </form>
       {weather.data !== undefined ? (
         <div className="display-weather">
-          {/* {totalData.map((item) => {
-            return <DisplayWeatherInfo data={item.data} />;
+          {/* {totalData.map((item, index) => {
+            <DisplayWeatherInfo key={index} data={item.data} />;
           })} */}
 
           <DisplayWeatherInfo data={weather.data} />

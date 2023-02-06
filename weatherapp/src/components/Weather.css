@@ -1,7 +1,6 @@
 .weather {
   margin: 0 auto;
   margin-bottom: 12px;
-
 }
 
 .app-name {
@@ -11,7 +10,7 @@
 }
 .weather input {
   height: 39px;
-  width: 250px;
+  width: 350px;
   padding: 12px 20px;
   margin: 8px 0;
 
@@ -26,6 +25,7 @@
   border: 1px white;
   border-radius: 5px;
   text-align: center;
+  color: white;
 }
 
 .reload-btn {
