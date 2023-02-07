@@ -7,10 +7,6 @@ function DisplayWeatherInfo(props) {
   // console.log("Id ", data.id);
   const [totalWeatherData, settotalWeatherData] = useState([]);
 
-  function removeElement() {
-    window.location.reload();
-  }
-
   useEffect(() => {
     settotalWeatherData([...totalWeatherData, data]);
   }, [data]);
@@ -31,7 +27,6 @@ function DisplayWeatherInfo(props) {
                   stroke-width="1.5"
                   stroke="currentColor"
                   className="delete-icon"
-                  onClick={removeElement}
                 >
                   <path
                     stroke-linecap="round"

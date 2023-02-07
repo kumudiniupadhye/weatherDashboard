@@ -66,7 +66,7 @@ function Weather() {
         </button>
       </form>
       {weather.data !== undefined ? (
-        <div className="display-weather">
+        <div className="grid md:grid-cols-3  sm:grid-cols-1">
           <DisplayWeatherInfo data={weather.data} />
         </div>
       ) : null}
