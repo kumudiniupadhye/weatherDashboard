@@ -5,7 +5,6 @@ import "./Weather.css";
 function Weather() {
   const [form, setForm] = useState("");
   const [weather, setWeather] = useState({});
-  // const [totalData, settotalData] = useState({});
 
   async function getWeatherData(e) {
     e.preventDefault();
@@ -16,10 +15,6 @@ function Weather() {
 
       const response = await fetch(url);
       const resJson = await response.json();
-      // var myArray = [];
-      // var showArray = myArray.push(resJson);
-      // console.log("resjson: ", resJson);
-      // console.log("show array -> ", showArray);
 
       if (resJson.message !== "city not found") {
         // console.log("form", form);
@@ -42,8 +37,6 @@ function Weather() {
   const refreshPage = () => {
     window.location.reload();
   };
-  // totalData.push(weather);
-  // console.log("lets see -> ", totalData);
 
   return (
     <div className="weather">
@@ -74,10 +67,6 @@ function Weather() {
       </form>
       {weather.data !== undefined ? (
         <div className="display-weather">
-          {/* {totalData.map((item, index) => {
-            <DisplayWeatherInfo key={index} data={item.data} />;
-          })} */}
-
           <DisplayWeatherInfo data={weather.data} />
         </div>
       ) : null}

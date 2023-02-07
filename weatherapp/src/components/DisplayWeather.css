@@ -1,8 +1,8 @@
 .weather-info {
   color: white;
-  display: block;
-  /* margin: auto; */
-  padding: auto;
+  /* display: block;
+  /* margin: auto; 
+  padding: auto; */
   margin-top: 35px;
 }
 
@@ -12,9 +12,9 @@
   height: 440px;
   padding: 20px;
   margin: 35px;
-  display: block;
+  /* display: block;
   margin: auto;
-  padding: auto;
+  padding: auto; */
 
   border-radius: 20px;
 }
